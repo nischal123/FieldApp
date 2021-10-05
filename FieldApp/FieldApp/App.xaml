@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Application xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FieldApp.App">
+    <Application.Resources>
+
+        <ResourceDictionary>
+            <Color x:Key="black">black</Color>
+            <Color x:Key="grey">gray</Color>
+            <Color x:Key="dogerBlue">#1E90FF</Color>
+            <Color x:Key="whiteColor">white</Color>
+
+            <!--//implicit xaml styles-->
+            <Style x:Key="blueButton" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="{StaticResource dogerBlue}"/>
+                <Setter Property="TextColor" Value="{StaticResource whiteColor}"/>
+            </Style>
+
+            <!--explicit styles-->
+            <Style x:Key="greyButton" TargetType="Button">
+                <Setter Property="BackgroundColor" Value="{StaticResource grey}"/>
+                <Setter Property="TextColor" Value="{StaticResource whiteColor}"/>
+            </Style>
+
+        </ResourceDictionary>
+
+    </Application.Resources>
+</Application>
